@@ -52,13 +52,9 @@ Press **F10** in-game, or click the arrow in the corner, to open the Insanity En
 
 ## Status
 
-Actively in development. Head tracking, the hand-held camcorder, turning, and the sharp UI are working.
+Actively in development. Working: head tracking, the hand-held camcorder, turning, the sharp UI, and motion-tracked hands and arms.
 
-**Coming next:**
-- Motion-tracked hands and arms
-- Physical holsters: reach to your hip, grab the camcorder, raise it to your face
-- Night vision visible only through the camcorder's screen
-- Grabbable doors
+Coming next: grabbable doors, night vision through the camcorder screen, and physical holsters.
 
 ## Credits
 
