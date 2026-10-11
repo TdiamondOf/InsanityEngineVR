@@ -26,7 +26,20 @@ Released under **GPL-3.0**, the same license as the base mod. You're free to use
 
 - A copy of Outlast (2013) on PC
 - A PC VR headset
-- (fill in your specifics once you confirm them — install steps, etc.)
+
+## Installation
+
+1. **Install Outlast (2013)** on your PC if you haven't already. You need your own copy.
+2. **Set up your VR headset** and make sure it works on your PC. *(Confirm the exact runtime — SteamVR / OpenXR — and list it here.)*
+3. **Download** the latest Insanity Engine VR zip from the Releases section.
+4. **Unzip** it. You'll get a set of files.
+5. **Find your Outlast game folder** — the folder that contains `OLGame.exe`. On Steam, it's usually:
+`C:\Program Files (x86)\Steam\steamapps\common\Outlast`
+*(Tip: in Steam, right-click Outlast → Manage → Browse local files.)*
+6. **Copy all the unzipped files into that folder**, right next to `OLGame.exe`. If asked to replace anything, *(confirm whether yes or no).*
+7. **Put on your headset and launch Outlast normally.** The mod loads automatically.
+
+To uninstall, delete the files you added, or use Steam's **Verify integrity of game files** to restore the original.
 
 ## Status
 
