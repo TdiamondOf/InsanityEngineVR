@@ -56,9 +56,18 @@ Actively in development. Working: head tracking, the hand-held camcorder, turnin
 
 Coming next: grabbable doors, night vision through the camcorder screen, and physical holsters.
 
-## Credits
+## Credits & Licenses
 
-This mod is built on the excellent [Outlast VR mod by jrush64](https://github.com/jrush64/outlast-vr-mod). Insanity Engine VR extends that foundation with motion controls and other features. Huge thanks to jrush64. None of this exists without their work.
+This mod is a fork of jrush64's outlast-vr-mod and is licensed under **GPL-3.0**.
+
+Bundled components:
+
+- **DXVK** — D3D9-to-Vulkan translation. https://github.com/doitsujin/dxvk
+- **jrush64's outlast-vr-mod** — original mod this is forked from (GPL-3.0). https://github.com/jrush64/outlast-vr-mod
+- **MinHook** — API hooking library (BSD-2-Clause).
+- **Dear ImGui** — UI library (MIT).
+
+Each component's full license is included in the `licenses/` folder.
 
 Also uses:
 - [MinHook](https://github.com/TsudaKageyu/minhook) (BSD-2-Clause)
@@ -67,6 +76,4 @@ Also uses:
 
 See `THIRD-PARTY-NOTICES.txt` for full license notices.
 
-## License
 
-Released under **GPL-3.0**, the same license as the base mod. The full source code for every release is available in this repository. You're free to use, modify, and redistribute it, but any version you release must also be open source under GPL-3.0 and keep this license and credit intact.
