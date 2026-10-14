@@ -1,8 +1,11 @@
-# IMPORTANT MUST READ
+## ⚠️ IMPORTANT — MUST READ
 
-Currently you may have to tweak settings in the insanity menu to get the hands tracking correctly
-Camcorder is broken when I tested it is currently being fixed and should be fixed by next week or sooner
-remember, this is a VERY early build, expect bugs if anything is broken contact me via github issues and it will be looked at.
+This is a VERY early build. Expect bugs.
+
+Hand tracking: You may need to adjust settings in the Insanity menu (F10) to get your hands tracking correctly.
+Camcorder: Currently broken. A fix is in progress.
+
+Found a bug? Report it on the Issues page.
 
 
 # Insanity Engine VR
