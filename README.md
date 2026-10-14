@@ -1,3 +1,10 @@
+# IMPORTANT MUST READ
+
+Currently you may have to tweak settings in the insanity menu to get the hands tracking correctly
+Camcorder is broken when I tested it is currently being fixed and should be fixed by next week or sooner
+remember, this is a VERY early build, expect bugs if anything is broken contact me via email and it will be looked at.
+email: stormcipherx@gmail.com
+
 # Insanity Engine VR
 
 A 6DOF VR mod for **Outlast (2013)** with motion controls.
