@@ -13,27 +13,31 @@ Play Outlast in virtual reality with full head tracking, room-scale 6DOF movemen
 - **In-game settings menu:** tune FOV, scale, render resolution, UI distance and size, and more, live, without restarting
 - **Clean spectator view:** a normal single image on your monitor for anyone watching or recording
 
-## Requirements
+Requirements
+Outlast (2013) on PC. Tested on the Steam version. GOG/Epic not tested yet.
+A PC VR headset with motion controllers. Tested on Meta Quest via Quest Link and Virtual Desktop. SteamVR headsets should work but haven’t been tested.
+An active OpenXR runtime. If you have more than one installed (SteamVR, Meta app, Virtual Desktop), make sure the one you’re using is set as the active OpenXR runtime.
+A Vulkan-capable GPU. Anything from the last ~8 years is fine.
+Installation
+Run Outlast once normally, then quit. This creates the game’s settings files the setup script needs.
+Open the game folder. In Steam, right-click Outlast → Manage → Browse local files, then open Binaries\Win64 (the folder with OLGame.exe).
+Copy everything from the zip into that folder, next to OLGame.exe:
+d3d9.dll — the mod
+openxr_loader.dll — talks to your headset
+dxvk_d3d9.dll — makes the game run smoothly (DXVK)
+outlastvr.ini — mod settings
+OutlastVR_DoorHandles.ini — door-grab calibration
+Outlast-VR.bat — setup / uninstall script
+Run Outlast-VR.bat, choose Install, and enter your headset’s refresh rate (72 / 80 / 90 / 120). It backs up your game settings, sets the FOV and frame cap, and turns off mouse look and motion blur.
+Do not turn off Depth of Field in the game’s settings. Night vision needs it. The mod already removes the blur.
+Start your VR runtime first (Quest Link, Virtual Desktop, or SteamVR) with your headset connected.
+Launch Outlast from Steam. The mod loads automatically.
 
-- **Outlast (2013), Steam version.** The mod only works with the Steam build. GOG, Epic, and the 32-bit version aren't supported.
-- **A PC VR headset** with an OpenXR runtime set as the active runtime. Any of these work:
-  - **SteamVR:** SteamVR Settings → OpenXR → "Set SteamVR as OpenXR runtime"
-  - **Meta Quest Link:** Meta Quest PC app → Settings → General → set as active OpenXR runtime
-  - **Virtual Desktop:** uses its own runtime (VDXR), no extra setup needed
-- **Microsoft Visual C++ 2015–2022 x64 Redistributable.** Most gaming PCs already have it. If the game runs flat with no VR, install this first.
+On your monitor: F10 opens the mod menu. G recenters your view.
 
-> **Note:** This mod uses `d3d9.dll`, so it can't be installed alongside other mods that use the same file (ReShade, DXVK, dgVoodoo).
+Uninstall
 
-## Installation
-
-1. **Download** the latest Insanity Engine VR zip and unzip it.
-2. **Open your Outlast folder.** In Steam: right-click Outlast → Manage → Browse local files.
-3. **Go into `Binaries\Win64`**, the folder that contains `OLGame.exe`. *Not* the main Outlast folder.
-4. **Copy all the unzipped files** into `Binaries\Win64`.
-5. **Run `Outlast-VR.bat` once.** It sets up your game settings for VR (field of view, motion blur off, frame cap removed, mouse-look disabled) and backs up your original settings first.
-6. **Start your headset and VR runtime first**, then launch Outlast from Steam normally. The mod loads automatically.
-
-> If the headset or VR runtime isn't running when the game starts, the game runs flat. Close it, start your VR runtime, and launch again.
+Run Outlast-VR.bat again and choose Uninstall. This restores your original game settings and removes d3d9.dll and openxr_loader.dll. Then delete the remaining mod files by hand: dxvk_d3d9.dll, outlastvr.ini, OutlastVR_DoorHandles.ini, and Outlast-VR.bat.
 
 ### Updating
 
