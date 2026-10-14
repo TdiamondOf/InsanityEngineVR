@@ -69,6 +69,12 @@ Bundled components:
 
 Each component's full license is included in the `licenses/` folder.
 
+## Picking things up & interacting
+
+**Batteries and story items:** There is no pickup prompt. Just walk up to the item and press **X** — if you're close enough, it's picked up automatically.
+
+**Some story interactions:** For certain scripted actions, the prompt only appears while you're **crouched**. If you walk up to something and no prompt shows, **crouch down** — the prompt will appear partway through the crouch. Press the button while you can see it to trigger the action.
+
 Also uses:
 - [MinHook](https://github.com/TsudaKageyu/minhook) (BSD-2-Clause)
 - [Dear ImGui](https://github.com/ocornut/imgui) (MIT)
