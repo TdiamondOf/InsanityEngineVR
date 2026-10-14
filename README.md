@@ -13,7 +13,7 @@ Play Outlast in virtual reality with full head tracking, room-scale 6DOF movemen
 - **In-game settings menu:** tune FOV, scale, render resolution, UI distance and size, and more, live, without restarting
 - **Clean spectator view:** a normal single image on your monitor for anyone watching or recording
 
-Requirements
+## Requirements
 Outlast (2013) on PC. Tested on the Steam version. GOG/Epic not tested yet.
 A PC VR headset with motion controllers. Tested on Meta Quest via Quest Link and Virtual Desktop. SteamVR headsets should work but haven’t been tested.
 An active OpenXR runtime. If you have more than one installed (SteamVR, Meta app, Virtual Desktop), make sure the one you’re using is set as the active OpenXR runtime.
