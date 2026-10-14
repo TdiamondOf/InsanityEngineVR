@@ -40,18 +40,13 @@ Play Outlast in virtual reality with full head tracking, room-scale 6DOF movemen
 
 ## Uninstall
 
-Run `Outlast-VR.bat` again and choose Uninstall. This restores your original game settings and removes `d3d9.dll` and `openxr_loader.dll`. Then delete the remaining mod files by hand: `dxvk_d3d9.dll`, `outlastvr.ini`, `OutlastVR_DoorHandles.ini`, and `Outlast-VR.bat`.
+Run `Outlast-VR.bat` again and choose Uninstall. This restores your original game settings and deletes all the mod files from `Binaries\Win64`: `d3d9.dll`, `openxr_loader.dll`, `dxvk_d3d9.dll`, `outlastvr.ini`, `OutlastVR_DoorHandles.ini`, and finally `Outlast-VR.bat` itself.
 
 ### Updating
 
 If Windows asks to replace files:
-- `d3d9.dll`: **Yes**
-- `openxr_loader.dll`: **Yes**
-- `outlastvr.ini`: **No**, so you keep your settings
-
-### Uninstalling
-
-Delete the mod files from `Binaries\Win64`, or use Steam's **Verify integrity of game files** to restore the original game.
+- `d3d9.dll`, `openxr_loader.dll`, `dxvk_d3d9.dll`, `Outlast-VR.bat`: **Yes**
+- `outlastvr.ini`, `OutlastVR_DoorHandles.ini`: **No**, so you keep your settings
 
 ## Settings
 
@@ -63,30 +58,30 @@ Actively in development. Working: head tracking, the hand-held camcorder, turnin
 
 Coming next: grabbable doors, night vision through the camcorder screen, and physical holsters.
 
-## Credits & Licenses
-
-This mod is a fork of jrush64's outlast-vr-mod and is licensed under **GPL-3.0**.
-
-Bundled components:
-
-- **DXVK** — D3D9-to-Vulkan translation. https://github.com/doitsujin/dxvk
-- **jrush64's outlast-vr-mod** — original mod this is forked from (GPL-3.0). https://github.com/jrush64/outlast-vr-mod
-- **MinHook** — API hooking library (BSD-2-Clause).
-- **Dear ImGui** — UI library (MIT).
-
-Each component's full license is included in the `licenses/` folder.
-
 ## Picking things up & interacting
 
 **Batteries and story items:** There is no pickup prompt. Just walk up to the item and press **X** — if you're close enough, it's picked up automatically.
 
 **Some story interactions:** For certain scripted actions, the prompt only appears while you're **crouched**. If you walk up to something and no prompt shows, **crouch down** — the prompt will appear partway through the crouch. Press the button while you can see it to trigger the action.
 
-Also uses:
-- [MinHook](https://github.com/TsudaKageyu/minhook) (BSD-2-Clause)
-- [Dear ImGui](https://github.com/ocornut/imgui) (MIT)
-- [OpenXR Loader](https://github.com/KhronosGroup/OpenXR-SDK) by Khronos (Apache-2.0)
+## Known Issues
 
-See `THIRD-PARTY-NOTICES.txt` for full license notices.
+- **Night vision:** the night-vision light can still show partly in your own view. It's aimed through the camcorder screen, but each eye looks through the screen at a slightly different angle.
+- **HUD dot:** the centre dot isn't centred in the headset.
+- **No pickup prompt:** prompts don't appear in VR. **X** picks up the nearest item within 1.5 m, with the game's own pickup animation.
+- **Aiming left/right** still comes from your body, not your head.
+- **Tested setups:** Steam version with Meta Quest (Quest Link and Virtual Desktop) only. GOG/Epic copies and SteamVR headsets are untested.
+
+## Credits & Licenses
+
+Insanity Engine VR is by T-Diamond (TdiamondOf). It is a fork of jrush64's outlast-vr-mod and is licensed under **GPL-3.0** (see `LICENSE`). The source code for each release is attached to it on the Releases page.
+
+- [jrush64's outlast-vr-mod](https://github.com/jrush64/outlast-vr-mod) — the original mod this is forked from (GPL-3.0)
+- [DXVK](https://github.com/doitsujin/dxvk) — Direct3D 9 to Vulkan, bundled as `dxvk_d3d9.dll` (zlib/libpng)
+- [OpenXR Loader](https://github.com/KhronosGroup/OpenXR-SDK) by Khronos — bundled as `openxr_loader.dll` (Apache-2.0)
+- [MinHook](https://github.com/TsudaKageyu/minhook) — API hooking, built into `d3d9.dll` (BSD-2-Clause)
+- [Dear ImGui](https://github.com/ocornut/imgui) — the settings menu, built into `d3d9.dll` (MIT)
+
+Full license notices for every bundled component are in `THIRD-PARTY-NOTICES.txt`.
 
 
