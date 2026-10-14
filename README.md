@@ -14,30 +14,33 @@ Play Outlast in virtual reality with full head tracking, room-scale 6DOF movemen
 - **Clean spectator view:** a normal single image on your monitor for anyone watching or recording
 
 ## Requirements
-Outlast (2013) on PC. Tested on the Steam version. GOG/Epic not tested yet.
-A PC VR headset with motion controllers. Tested on Meta Quest via Quest Link and Virtual Desktop. SteamVR headsets should work but haven’t been tested.
-An active OpenXR runtime. If you have more than one installed (SteamVR, Meta app, Virtual Desktop), make sure the one you’re using is set as the active OpenXR runtime.
-A Vulkan-capable GPU. Anything from the last ~8 years is fine.
-Installation
-Run Outlast once normally, then quit. This creates the game’s settings files the setup script needs.
-Open the game folder. In Steam, right-click Outlast → Manage → Browse local files, then open Binaries\Win64 (the folder with OLGame.exe).
-Copy everything from the zip into that folder, next to OLGame.exe:
-d3d9.dll — the mod
-openxr_loader.dll — talks to your headset
-dxvk_d3d9.dll — makes the game run smoothly (DXVK)
-outlastvr.ini — mod settings
-OutlastVR_DoorHandles.ini — door-grab calibration
-Outlast-VR.bat — setup / uninstall script
-Run Outlast-VR.bat, choose Install, and enter your headset’s refresh rate (72 / 80 / 90 / 120). It backs up your game settings, sets the FOV and frame cap, and turns off mouse look and motion blur.
-Do not turn off Depth of Field in the game’s settings. Night vision needs it. The mod already removes the blur.
-Start your VR runtime first (Quest Link, Virtual Desktop, or SteamVR) with your headset connected.
-Launch Outlast from Steam. The mod loads automatically.
 
-On your monitor: F10 opens the mod menu. G recenters your view.
+- [ ] **Outlast (2013) on PC.** Tested on the Steam version. GOG/Epic not tested yet.
+- [ ] **A PC VR headset with motion controllers.** Tested on Meta Quest via Quest Link and Virtual Desktop. SteamVR headsets should work but haven't been tested.
+- [ ] **An active OpenXR runtime.** If you have more than one installed (SteamVR, Meta app, Virtual Desktop), make sure the one you're using is set as the active OpenXR runtime.
+- [ ] **A Vulkan-capable GPU.** Anything from the last ~8 years is fine.
 
-Uninstall
+## Installation
 
-Run Outlast-VR.bat again and choose Uninstall. This restores your original game settings and removes d3d9.dll and openxr_loader.dll. Then delete the remaining mod files by hand: dxvk_d3d9.dll, outlastvr.ini, OutlastVR_DoorHandles.ini, and Outlast-VR.bat.
+- [ ] **Run Outlast once normally, then quit.** This creates the game's settings files the setup script needs.
+- [ ] **Open the game folder.** In Steam, right-click Outlast → Manage → Browse local files, then open `Binaries\Win64` (the folder with `OLGame.exe`).
+- [ ] **Copy everything from the zip into that folder**, next to `OLGame.exe`:
+- [ ] `d3d9.dll` — the mod
+- [ ] `openxr_loader.dll` — talks to your headset
+- [ ] `dxvk_d3d9.dll` — makes the game run smoothly (DXVK)
+- [ ] `outlastvr.ini` — mod settings
+- [ ] `OutlastVR_DoorHandles.ini` — door-grab calibration
+- [ ] `Outlast-VR.bat` — setup / uninstall script
+- [ ] **Run `Outlast-VR.bat`**, choose Install, and enter your headset's refresh rate (72 / 80 / 90 / 120). It backs up your game settings, sets the FOV and frame cap, and turns off mouse look and motion blur.
+- ⚠️ **Do not turn off Depth of Field in the game's settings.** Night vision needs it. The mod already removes the blur.
+- [ ] **Start your VR runtime first** (Quest Link, Virtual Desktop, or SteamVR) with your headset connected.
+- [ ] **Launch Outlast from Steam.** The mod loads automatically.
+
+**On your monitor:** **F10** opens the mod menu. **G** recenters your view.
+
+## Uninstall
+
+Run `Outlast-VR.bat` again and choose Uninstall. This restores your original game settings and removes `d3d9.dll` and `openxr_loader.dll`. Then delete the remaining mod files by hand: `dxvk_d3d9.dll`, `outlastvr.ini`, `OutlastVR_DoorHandles.ini`, and `Outlast-VR.bat`.
 
 ### Updating
 
